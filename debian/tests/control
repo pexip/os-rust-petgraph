@@ -1,0 +1,59 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --all-features
+Features: test-name=rust-petgraph:@
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --no-default-features --features all
+Features: test-name=librust-petgraph-dev:all
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets 
+Features: test-name=librust-petgraph-dev:default
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --no-default-features --features generate
+Features: test-name=librust-petgraph-dev:generate
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --no-default-features --features graphmap
+Features: test-name=librust-petgraph-dev:graphmap
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --no-default-features --features matrix_graph
+Features: test-name=librust-petgraph-dev:matrix_graph
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --no-default-features --features serde
+Features: test-name=librust-petgraph-dev:serde
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --no-default-features --features serde-1
+Features: test-name=librust-petgraph-dev:serde-1
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --no-default-features --features serde_derive
+Features: test-name=librust-petgraph-dev:serde_derive
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --no-default-features --features stable_graph
+Features: test-name=librust-petgraph-dev:stable_graph
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --no-default-features --features unstable
+Features: test-name=librust-petgraph-dev:unstable
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test petgraph 0.6.2 --all-targets --no-default-features
+Features: test-name=librust-petgraph-dev:
+Depends: dh-cargo (>= 18), librust-bincode-1+default-dev (>= 1.3.3-~~), librust-itertools-0.10-dev (>= 0.10.1-~~), librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
